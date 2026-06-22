@@ -1,0 +1,159 @@
+<!-- 1. VIEW: HOME (BERANDA) -->
+<section id="view-home" class="view-section active">
+  <div class="hero-banner">
+    <div class="row align-items-center g-4 w-100 m-0">
+      <div class="col-lg-8 p-0">
+        <h1>Sejarah Lengkap <br><span>Kekaisaran Bizantium</span></h1>
+        <p class="lead">Menjelajahi seribu tahun peradaban Romawi Timur yang agung, dari pendirian Konstantinopel
+          oleh Constantine I hingga kejatuhannya yang legendaris di tahun 1453 M.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#/sejarah" class="btn btn-gold btn-lg"><i class="fas fa-book-open me-2"></i>Mulai Membaca</a>
+          <a href="#/database" class="btn btn-outline-light btn-lg"><i class="fas fa-search me-2"></i>Cari
+            Kaisar</a>
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block text-center p-0">
+        <div class="hero-flag-wrapper hover-float">
+          <svg class="hero-byzantine-flag" viewBox="0 0 240 180" width="240" height="180"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hero-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FCF6BA" />
+                <stop offset="25%" stop-color="#BF953F" />
+                <stop offset="50%" stop-color="#B38728" />
+                <stop offset="75%" stop-color="#FBF5B7" />
+                <stop offset="100%" stop-color="#AA771C" />
+              </linearGradient>
+              <linearGradient id="flag-wave" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(0,0,0,0.3)" />
+                <stop offset="20%" stop-color="rgba(255,255,255,0.15)" />
+                <stop offset="40%" stop-color="rgba(0,0,0,0.25)" />
+                <stop offset="60%" stop-color="rgba(255,255,255,0.15)" />
+                <stop offset="80%" stop-color="rgba(0,0,0,0.3)" />
+                <stop offset="100%" stop-color="rgba(255,255,255,0.1)" />
+              </linearGradient>
+            </defs>
+            <rect width="240" height="180" fill="#B01414" rx="8" />
+            <rect x="108" y="0" width="24" height="180" fill="url(#hero-gold-grad)" />
+            <rect x="0" y="78" width="240" height="24" fill="url(#hero-gold-grad)" />
+            <!-- Top-left Beta -->
+            <g transform="translate(72, 24) scale(6)" stroke="url(#hero-gold-grad)" stroke-width="1.2"
+              stroke-linecap="round" fill="none">
+              <path d="M 0 0 L 0 6" />
+              <path d="M -2 0 L 1 0" />
+              <path d="M -2 6 L 1 6" />
+              <path d="M 0 0 C -3 0 -3 3 0 3" />
+              <path d="M 0 3 C -3 3 -3 6 0 6" />
+            </g>
+            <!-- Bottom-left Beta -->
+            <g transform="translate(72, 120) scale(6)" stroke="url(#hero-gold-grad)" stroke-width="1.2"
+              stroke-linecap="round" fill="none">
+              <path d="M 0 0 L 0 6" />
+              <path d="M -2 0 L 1 0" />
+              <path d="M -2 6 L 1 6" />
+              <path d="M 0 0 C -3 0 -3 3 0 3" />
+              <path d="M 0 3 C -3 3 -3 6 0 6" />
+            </g>
+            <!-- Top-right Beta -->
+            <g transform="translate(168, 24) scale(6)" stroke="url(#hero-gold-grad)" stroke-width="1.2"
+              stroke-linecap="round" fill="none">
+              <path d="M 0 0 L 0 6" />
+              <path d="M -1 0 L 2 0" />
+              <path d="M -1 6 L 2 6" />
+              <path d="M 0 0 C 3 0 3 3 0 3" />
+              <path d="M 0 3 C 3 3 3 6 0 6" />
+            </g>
+            <!-- Bottom-right Beta -->
+            <g transform="translate(168, 120) scale(6)" stroke="url(#hero-gold-grad)" stroke-width="1.2"
+              stroke-linecap="round" fill="none">
+              <path d="M 0 0 L 0 6" />
+              <path d="M -1 0 L 2 0" />
+              <path d="M -1 6 L 2 6" />
+              <path d="M 0 0 C 3 0 3 3 0 3" />
+              <path d="M 0 3 C 3 3 3 6 0 6" />
+            </g>
+            <!-- Silk Ripple Wave Overlay -->
+            <rect width="240" height="180" fill="url(#flag-wave)" rx="8"
+              style="mix-blend-mode: multiply; pointer-events: none;" />
+          </svg>
+          <div class="hero-flag-label">Panji Kekaisaran Bizantium</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Statistics -->
+  <div class="row g-4 mb-5">
+    <div class="col-6 col-lg-3">
+      <div class="stat-box">
+        <div class="stat-num text-gold" id="stat-years">0</div>
+        <div class="stat-label">Lama Berdiri</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="stat-box">
+        <div class="stat-num text-gold" id="stat-dynasties">0</div>
+        <div class="stat-label">Jumlah Dinasti</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="stat-box">
+        <div class="stat-num text-gold" id="stat-emperors">0</div>
+        <div class="stat-label">Jumlah Kaisar</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="stat-box">
+        <div class="stat-num text-gold" id="stat-capital">-</div>
+        <div class="stat-label">Ibu Kota</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Introduction Text -->
+  <div class="row align-items-center g-5 mb-5">
+    <div class="col-lg-6">
+      <h2 class="imperial-font text-purple mb-4">Romawi Timur yang Bertahan</h2>
+      <p class="lead" style="font-family: var(--font-serif);">Ketika Roma Barat runtuh pada abad ke-5 Masehi akibat
+        serbuan bangsa barbar, peradaban Romawi tidak berakhir. Di timur, berpusat di pelabuhan Konstantinopel yang
+        strategis, Kekaisaran Romawi Timur tetap kokoh berdiri selama 1.000 tahun berikutnya.</p>
+      <p class="text-secondary">Dikenal oleh para sejarawan modern sebagai <strong>Kekaisaran Bizantium</strong>,
+        peradaban ini memadukan hukum Romawi, budaya Yunani yang dinamis, dan iman Kristen Ortodoks. Bizantium
+        berfungsi sebagai benteng pertahanan Eropa dari berbagai invasi eksternal sekaligus memelihara warisan
+        sastra klasik kuno yang sangat berharga.</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="card-imperial p-4">
+        <h3 class="h5 text-purple mb-3"><i class="fas fa-map-marked-alt text-gold me-2"></i>Wilayah Kekuasaan
+          Bizantium</h3>
+        <p class="text-secondary small">Dari batas perbatasan Sungai Danube di Balkan hingga pegunungan bersalju di
+          Armenia, wilayah kekuasaan Bizantium senantiasa mengalami pasang surut yang dramatis seiring dengan
+          pergantian dinasti dan hasil perang.</p>
+        <hr class="border-color">
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="text-muted small">Lihat perubahan wilayah interaktif per abad.</span>
+          <a href="#/peta" class="btn btn-outline-purple btn-sm">Jelajahi Peta <i
+              class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Infographics / Charts Dashboard -->
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-5">
+      <div class="card-imperial p-3 h-100">
+        <div style="height: 350px;">
+          <canvas id="chart-status"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-7">
+      <div class="card-imperial p-3 h-100">
+        <div style="height: 350px;">
+          <canvas id="chart-dynasty"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+<!-- 8. VIEW: PETA INTERAKTIF -->
+<section id="view-peta" class="view-section active">
+  <h2 class="imperial-font text-purple mb-4 border-bottom pb-2">Peta Interaktif Perubahan Wilayah</h2>
+  <p class="text-secondary mb-4">Pilih era abad di bawah ini untuk melihat pasang surut wilayah kekuasaan Kekaisaran
+    Bizantium secara visual.</p>
+
+  <div class="row g-4">
+    <!-- Control buttons for centuries -->
+    <div class="col-12">
+      <div class="d-flex flex-wrap gap-2 justify-content-center map-controls-wrapper mb-3">
+        <button class="map-control-btn" data-index="0">Abad ke-4 (330 M)</button>
+        <button class="map-control-btn active" data-index="1">Abad ke-6 (Masa Justinian)</button>
+        <button class="map-control-btn" data-index="2">Abad ke-8 (Krisis Arab)</button>
+        <button class="map-control-btn" data-index="3">Abad ke-11 (Era Basil II)</button>
+        <button class="map-control-btn" data-index="4">Abad ke-13 (Restorasi Nicaea)</button>
+        <button class="map-control-btn" data-index="5">Abad ke-15 (Kejatuhan 1453)</button>
+      </div>
+    </div>
+
+    <!-- Interactive Leaflet Map -->
+    <div class="col-lg-8">
+      <div class="map-wrapper overflow-hidden">
+        <div class="map-svg-container p-0 overflow-hidden" style="height: 500px; position: relative;">
+          <div id="map-leaflet" style="width: 100%; height: 100%; z-index: 1;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Information details on selected era -->
+    <div class="col-lg-4">
+      <div class="card-imperial p-4 h-100">
+        <h3 class="h4 text-purple mb-2" id="map-selected-era">Era Seleksi</h3>
+        <hr class="border-color">
+        <p class="text-secondary small" id="map-selected-desc">Memuat deskripsi peta...</p>
+        <h5 class="h6 text-purple fw-bold mt-4">Kota Utama di Wilayah Kekuasaan:</h5>
+        <div id="map-selected-highlights" class="mt-2">
+          <!-- Will be rendered dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

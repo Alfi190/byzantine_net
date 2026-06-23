@@ -1,0 +1,21 @@
+/* --- Roman Laurel Branch Divider --- */
+.laurel-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 3rem 0;
+}
+
+.laurel-divider::before,
+.laurel-divider::after {
+  content: '';
+  height: 1.5px;
+  flex: 1;
+  background: var(--gold-metallic);
+}
+
+.laurel-divider i {
+  color: var(--color-gold);
+  font-size: 1.25rem;
+}

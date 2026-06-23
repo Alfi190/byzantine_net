@@ -1,0 +1,127 @@
+/* --- Header & Navbar Glassmorphism --- */
+.navbar-custom {
+  background-color: rgba(30, 10, 32, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 2px solid transparent;
+  border-image: var(--gold-metallic) 1;
+  padding: 0.9rem 1.8rem;
+  z-index: 1030;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: all var(--transition-speed);
+}
+
+.navbar-custom .navbar-brand {
+  color: #FFFFFF !important;
+  font-weight: 900;
+  font-size: 1.45rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 0.6rem 1.1rem !important;
+  margin: 0 0.15rem;
+  border-radius: 6px;
+  transition: all var(--transition-speed) ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: #FFFFFF !important;
+  background: rgba(197, 155, 39, 0.15);
+  box-shadow: 0 0 10px rgba(197, 155, 39, 0.3);
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* --- Clean and responsive Navbar overrides --- */
+.navbar-custom .input-group {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  /* Seamless capsule shape */
+  background: rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-speed);
+  overflow: hidden;
+}
+
+.navbar-custom .input-group:focus-within {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 10px rgba(197, 155, 39, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-custom .input-group-text {
+  border: none !important;
+  background: transparent !important;
+  color: var(--color-gold) !important;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.navbar-custom input#nav-search-input {
+  border: none !important;
+  background: transparent !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+  padding-left: 0.25rem;
+  padding-right: 1rem;
+}
+
+.navbar-custom input#nav-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Premium Mobile Navbar Toggler styling */
+.navbar-custom .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding: 6px 10px !important;
+  border-radius: 6px;
+  transition: all var(--transition-speed) ease;
+}
+
+.navbar-custom .navbar-toggler:focus {
+  box-shadow: 0 0 8px rgba(197, 155, 39, 0.4) !important;
+  border-color: var(--color-gold) !important;
+}
+
+.navbar-custom .navbar-toggler:hover {
+  background: rgba(197, 155, 39, 0.15) !important;
+  border-color: var(--color-gold) !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-collapse {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar-custom .nav-link {
+    margin: 0.2rem 0;
+    padding: 0.6rem 1rem !important;
+  }
+
+  .search-container {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}

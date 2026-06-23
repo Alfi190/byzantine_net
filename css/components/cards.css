@@ -1,0 +1,62 @@
+/* --- Card Styles --- */
+.card-imperial {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-speed) ease;
+  overflow: hidden;
+  height: auto;
+}
+
+.card-imperial:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold);
+}
+
+.card-imperial-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.1rem 1.6rem;
+}
+
+.card-imperial-body {
+  padding: 1.6rem;
+}
+
+/* Dynasty Selection Cards */
+.card-dynasty {
+  cursor: pointer;
+}
+
+.card-dynasty:hover .text-purple {
+  color: var(--color-gold) !important;
+}
+
+/* Emperor Preview Cards */
+.emperor-card {
+  position: relative;
+}
+
+.emperor-card-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.emperor-card-coin {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1rem auto;
+}
+
+/* Academic References Cards */
+.ref-item {
+  border-left: 3.5px solid var(--border-color);
+}
+
+.ref-item:hover {
+  border-left-color: var(--color-gold);
+}

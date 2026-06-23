@@ -1,0 +1,183 @@
+/* --- Base Customizations & Resets --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--bg-primary);
+  background-image: var(--marble-pattern);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.imperial-font {
+  font-family: var(--font-heading);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  text-shadow: var(--text-shadow-subtle);
+}
+
+p,
+li,
+th,
+td {
+  line-height: 1.65;
+}
+
+a {
+  color: var(--color-purple);
+  text-decoration: none;
+  transition: all var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--color-gold-hover);
+}
+
+/* Elegant Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-purple);
+  border-radius: 4px;
+  border: 1px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* --- Golden Shimmer Effect --- */
+.hover-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(25deg);
+  transition: none;
+}
+
+.hover-shine:hover::after {
+  left: 150%;
+  transition: all 0.9s ease-in-out;
+}
+
+/* --- Floating Animation --- */
+.hover-float:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* --- Utility Classes --- */
+.text-purple {
+  color: var(--color-purple) !important;
+}
+
+.text-gold {
+  color: var(--color-gold) !important;
+}
+
+.border-color {
+  border-color: var(--border-color) !important;
+}
+
+.bg-imperial-purple {
+  background-color: var(--color-purple) !important;
+  color: #fff !important;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.placeholder-light::placeholder {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Theme Toggle Button --- */
+.theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(197, 155, 39, 0.25);
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+/* --- Bootstrap overrides for theme colors & readability --- */
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Adjust links and purple text in dark mode for better readability */
+[data-theme="dark"] a {
+  color: var(--color-gold);
+}
+
+[data-theme="dark"] a:hover {
+  color: var(--color-gold-hover);
+}
+
+[data-theme="dark"] .text-purple {
+  color: var(--color-purple-light) !important;
+}
+
+[data-theme="dark"] a.text-purple {
+  color: var(--color-gold) !important;
+}
+
+[data-theme="dark"] a.text-purple:hover {
+  color: var(--color-gold-hover) !important;
+}

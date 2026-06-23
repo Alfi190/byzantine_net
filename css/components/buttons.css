@@ -1,0 +1,82 @@
+/* --- Premium Buttons --- */
+.btn-gold {
+  background: var(--gold-metallic);
+  color: #1A001D !important;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 0.75rem 1.6rem;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(197, 155, 39, 0.35);
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(197, 155, 39, 0.5);
+  background: linear-gradient(135deg, #FCF6BA 0%, #BF953F 50%, #FCF6BA 100%);
+}
+
+.btn-outline-purple {
+  color: var(--color-purple);
+  border: 1.5px solid var(--color-purple);
+  background: transparent;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--color-purple);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(var(--color-purple-rgb), 0.2);
+}
+
+.btn-outline-light {
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-outline-light:hover {
+  border-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* --- Floating Button --- */
+.btn-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1020;
+  cursor: pointer;
+  background: var(--gold-metallic);
+  color: #1A001D !important;
+  border: none;
+  box-shadow: 0 4px 15px rgba(197, 155, 39, 0.45);
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-floating:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(197, 155, 39, 0.6);
+}

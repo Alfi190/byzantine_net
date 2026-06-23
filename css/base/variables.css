@@ -1,0 +1,67 @@
+/* --- Import Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* --- Theme Variables --- */
+:root {
+  --font-heading: 'Cinzel', serif;
+  --font-text: 'Inter', sans-serif;
+  --font-serif: 'Lora', serif;
+
+  /* Color Palette - Roman Purple & Gold (Light Mode) */
+  --bg-primary: #FAF6F0;
+  --bg-secondary: #F3EDE2;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --text-primary: #3B1C32;
+  --text-secondary: #4E3147;
+  --text-muted: #846B7E;
+
+  --color-purple: #4A0E4E;
+  --color-purple-light: #702675;
+  --color-purple-rgb: 74, 14, 78;
+
+  /* Rich Metallic Gold Gradient */
+  --gold-metallic: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+  --color-gold: #C59B27;
+  --color-gold-hover: #D4AF37;
+  --color-gold-rgb: 197, 155, 39;
+
+  --border-color: rgba(197, 155, 39, 0.25);
+  --border-gold: #C59B27;
+
+  --shadow-sm: 0 2px 6px rgba(74, 14, 78, 0.03);
+  --shadow-md: 0 6px 16px rgba(74, 14, 78, 0.05);
+  --shadow-lg: 0 12px 28px rgba(74, 14, 78, 0.08);
+  --transition-speed: 0.35s;
+
+  /* Subtle Roman Marble Background Texture */
+  --marble-pattern: radial-gradient(circle at 10% 20%, rgba(197, 155, 39, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(74, 14, 78, 0.03) 0%, transparent 40%);
+}
+
+[data-theme="dark"] {
+  /* Color Palette - Dark Imperial Palace (Dark Mode) */
+  --bg-primary: #110712;
+  --bg-secondary: #1C0F1E;
+  --bg-card: rgba(33, 20, 36, 0.85);
+  --text-primary: #FDF5FD;
+  --text-secondary: #E5D5E5;
+  --text-muted: #B8A6B9;
+
+  --color-purple: #882D90;
+  --color-purple-light: #B44DBB;
+  --color-purple-rgb: 136, 45, 144;
+
+  --color-gold: #FFDF73;
+  --color-gold-hover: #FFECA8;
+  --color-gold-rgb: 255, 223, 115;
+
+  --border-color: rgba(255, 223, 115, 0.2);
+  --border-gold: #AA8417;
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.4);
+
+  --marble-pattern: radial-gradient(circle at 10% 20%, rgba(255, 223, 115, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(136, 45, 144, 0.04) 0%, transparent 40%);
+}

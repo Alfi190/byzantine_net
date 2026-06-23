@@ -18,6 +18,7 @@
   border-color: var(--border-color);
 }
 
+.table-responsive-imperial table thead th,
 table.dataTable thead th {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
@@ -117,28 +118,33 @@ table.dataTable thead th {
 }
 
 /* Striped table theme mapping */
+.table-responsive-imperial table,
 table.dataTable {
   border-collapse: collapse !important;
   border-color: var(--border-color) !important;
 }
 
+.table-responsive-imperial table tbody tr,
 table.dataTable tbody tr {
   background-color: var(--bg-card) !important;
   color: var(--text-primary) !important;
 }
 
+.table-responsive-imperial table.table-striped>tbody>tr:nth-of-type(odd)>*,
 table.dataTable.table-striped>tbody>tr:nth-of-type(odd)>* {
   background-color: var(--bg-secondary) !important;
   color: var(--text-primary) !important;
   box-shadow: none !important;
 }
 
+.table-responsive-imperial table.table-striped>tbody>tr:nth-of-type(even)>*,
 table.dataTable.table-striped>tbody>tr:nth-of-type(even)>* {
   background-color: var(--bg-card) !important;
   color: var(--text-primary) !important;
   box-shadow: none !important;
 }
 
+.table-responsive-imperial table.table-hover>tbody>tr:hover>*,
 table.dataTable.table-hover>tbody>tr:hover>* {
   background-color: rgba(197, 155, 39, 0.08) !important;
   color: var(--text-primary) !important;
